@@ -1,0 +1,122 @@
+@media screen and  (max-width:600px) {
+    
+    .menu{
+        font-size: 1rem;
+    }
+    
+    .rectangle1{
+        width:10rem;
+        height:15rem;
+        background-color: #d44177;
+        position:absolute;
+        top:5rem;
+       
+       
+        
+        
+    }
+    .rectangle2{
+        
+        width:13rem;
+        height:10rem;
+        top:7.5rem;
+    }
+    .name{
+        display:inline-block;
+        min-height:max-content;
+        color:#f2f2f4;
+        margin-top:9rem;
+        margin-left:2rem;
+        animation: 3s slide-in;
+           
+    } 
+        .name p{
+            font-size: 1.2rem;
+            line-height: 1.5;
+               
+        }
+        .about-container{
+            display:block;
+             height:500px;
+             position: relative;
+             z-index: 0;
+             
+         }
+         .about-ul{
+            list-style-type: none;
+           position:absolute;
+            top:2rem;
+            left:0;
+            
+        }
+        .about-ul li{
+            display:block;
+            position:relative;
+            width:200px;
+            height:100px;
+            top:2rem;
+            left:1rem;
+            padding:10px 10px;
+            background:#c7c6c6;
+            box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.849);
+            border-radius: 10px;
+              
+        }
+        .about-ul li::before{
+            display:none;
+        }
+        .progress-circle{
+            position:absolute;
+            top:2rem;
+            left:12.5rem;
+            z-index:2;
+            
+        }
+       
+        .about-container .about-ul li:nth-child(2) {
+            
+            left:15rem;
+            text-align:left;
+             
+            
+        }
+        .about-container .about-ul li:nth-child(2) .progress-circle{
+            
+            position:absolute;
+            top:2rem;
+            left:-1.5rem; 
+        } 
+        .about-container::after{
+            height:70%;
+            width:3px;
+            position:absolute;
+            top:5rem;
+            left:15rem;
+            content:" ";
+            background-color: #220351;
+        } 
+
+        .project-container{
+            display:grid;
+            grid-template-columns: 70%;
+            grid-template-rows: repeat(3,450px);
+            grid-template-rows: auto;
+            justify-content: center;
+            align-items: center;
+            min-height:400px;
+        
+        }  
+        
+
+        .website-descripition{
+            position:absolute;
+            bottom:3.5rem;
+            left:1.5rem;
+            font-family:inherit;
+            font-size: 12px;
+            text-align: left;
+            width:45ch;
+            line-clamp:3;
+            color:#3f3e3f;
+        }
+    }  
